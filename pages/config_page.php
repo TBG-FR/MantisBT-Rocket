@@ -57,6 +57,15 @@ print_manage_menu( 'manage_plugin_page.php' );
             <input type="submit" name="url_webhook_test" value="<?php echo plugin_lang_get( 'url_webhook_test' )?>" />
         </td>
     </tr>
+    
+    <tr>
+      <td class="category">
+        <?php echo plugin_lang_get( 'default_channel' )?>
+      </td>
+      <td colspan="2">
+        <input type="text" name="default_channel" value="<?php echo plugin_config_get( 'default_channel' )?>" />
+      </td>
+    </tr>
 
     <tr>
       <td class="category">
